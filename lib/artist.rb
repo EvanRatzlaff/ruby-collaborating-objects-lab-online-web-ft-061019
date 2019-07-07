@@ -45,5 +45,6 @@ class Artist
     self.songs.each do |song|
       @songs.length 
     end 
+    puts @songs.length
   end
 end

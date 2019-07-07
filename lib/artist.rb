@@ -46,5 +46,4 @@ class Artist
       @songs.length 
     end 
   end
-  binding.pry
 end

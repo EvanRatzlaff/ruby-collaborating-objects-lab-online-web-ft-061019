@@ -1,3 +1,4 @@
+require 'pry'
 class Artist
   attr_accessor :name, :songs
   @@all = []  #stores all instances of Artist 
@@ -42,7 +43,8 @@ class Artist
 
   def print_songs #instance method iterates through @songs of an instance of Artist
     self.songs.each do |song|
-      song.length 
+      @songs.length 
+binding.pry
     end 
   end
 end

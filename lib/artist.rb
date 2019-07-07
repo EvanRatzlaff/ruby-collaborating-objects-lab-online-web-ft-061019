@@ -43,7 +43,7 @@ class Artist
 
   def print_songs #instance method iterates through @songs of an instance of Artist
     self.songs.each do |song|
-      @songs.length 
+      song.length 
     end 
     puts @songs.length
   end

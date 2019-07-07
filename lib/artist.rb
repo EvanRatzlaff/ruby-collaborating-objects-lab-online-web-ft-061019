@@ -2,7 +2,7 @@ require 'pry'
 class Artist
   attr_accessor :name, :songs
   @@all = []  #stores all instances of Artist 
-
+  @@songs = @songs
   def initialize(name)
     @name = name
     @songs = []
@@ -42,8 +42,8 @@ class Artist
   end
 
   def print_songs #instance method iterates through @songs of an instance of Artist
-    #self.songs.each do |song|
-      @songs.length 
-    #end 
+    self.songs.each do |song|
+      @@songs.length 
+    end 
   end
 end
